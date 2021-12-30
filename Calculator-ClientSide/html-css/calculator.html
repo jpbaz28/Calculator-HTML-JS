@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <h2>Adding Calculator</h2>
+    <label for="input1">1st Number</label>
+    <input id="input1" type="text" placeholder=0 value='0'>
+    <label for="operator-select">Select Operation:</label>
+    
+    <select name="operator-select" id="operator-select">
+        <option value="" selected></option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <label for="input2">2nd Number</label>
+    <input id="input2" type="text" placeholder=0 value='0'>
+    <button id="calculateBtn" onclick="calculate(event)">Calculate</button>
+    <h3>Result:</h3>
+    <h4 id="result"></h4>
+    <ul id="result-list">
+
+    </ul>
+</body>
+<script src="..\JS\calculator-logic.js"></script>
+</html>
