@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Rock 3D', cursive;
+    max-width: 500px;
+    margin: auto
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    max-width: 500px;
+    margin: auto
+}
+h3 {
+    max-height: 5px;
+}
+body {
+    background-image: url('https://st.depositphotos.com/1427101/3573/v/600/depositphotos_35738175-stock-illustration-vector-background-from-numbers.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 500px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}

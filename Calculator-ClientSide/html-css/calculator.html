@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&family=Rock+3D&display=swap" rel="stylesheet">
+    <link href="calculator-style.css" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Calculator App</h1>
-    <h2>Adding Calculator</h2>
-    <label for="input1">1st Number</label>
-    <input id="input1" type="text" placeholder=0 value='0'>
+
+    <h1>CALCULATOR APP</h1>
+
+
+    <h2>Enter numbers and select operator:</h2>
+    <div>
+        <label for="input1">1st Number</label> 
+        <input id="input1" type="text" placeholder=0 value='0'>
+    </div>
     <label for="operator-select">Select Operation:</label>
-    
-    <select name="operator-select" id="operator-select">
-        <option value="" selected></option>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
-    <label for="input2">2nd Number</label>
-    <input id="input2" type="text" placeholder=0 value='0'>
-    <button id="calculateBtn" onclick="calculate(event)">Calculate</button>
-    <h3>Result:</h3>
-    <h4 id="result"></h4>
+    <div>
+        <select name="operator-select" id="operator-select">
+            <option value="" selected></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <!-- Could use a radio button here but don't have time to change logic -->
+        <!-- <input type="radio" id="add" name="fav_language" value="+">
+        <label for="add">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>  -->
+    </div>
+    <div>
+        <label for="input2">2nd Number</label>
+        <input id="input2" type="text" placeholder=0 value='0'>
+    </div>
+    <div>
+        <button id="calculateBtn" onclick="calculate(event)">Calculate</button>
+    </div>
+    <div>
+        <h3>Result:</h3>
+        <div id="result"></div>
+        
+    </div>
     <ul id="result-list">
 
     </ul>
